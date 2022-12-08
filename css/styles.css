@@ -1,0 +1,332 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap");
+
+:root {
+  /* Colors: */
+  ---ffb91d: #ffb91d;
+  ---ff991f: #ff991f;
+  --blanco: #ffffff;
+  --morado: #612ad5;
+  --azul-claro: #e1edff;
+  --verde-exito: #29d884;
+  --negro: #000000;
+  --azul: #0052cc;
+  --gris-claro: #dfe4e8;
+  --fondo: #f6f9fb;
+  --icono-claros: #97a0b0;
+  --gris: #344563;
+  ---ff4633: #ff4633;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  min-height: 100vh;
+}
+
+main {
+  padding-top: 67px;
+  height: 100vh;
+  display: flex;
+}
+
+
+/* 
+Header Styles
+*/
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 34px;
+  box-shadow: 0px 1px 3px #00000029;
+  width: 100%;
+  flex-wrap: wrap;
+  position: fixed;
+  z-index: 1000;
+}
+
+header .logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+header .logo img {
+  width: 66px;
+  height: 34px;
+}
+
+header .logo span {
+  color: var(--gris);
+  text-align: left;
+  font: normal normal medium 17px/26px Poppins;
+  font-weight: 500;
+  letter-spacing: 0px;
+  color: #344563;
+  margin-left: 10px;
+}
+
+header nav a {
+  color: #344563;
+  font-size: 14px;
+  padding: 12px 8px;
+  border-radius: 21px;
+  transition: 0.5s;
+  margin: 0 5px;
+}
+
+header nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+header nav a.comerc_link {
+  transition: 0.5s;
+  border: 1px solid #fff;
+}
+
+header nav a.comerc_link:hover {
+  background: #ff991f66 0% 0% no-repeat padding-box;
+  border: 1px solid #ff991f99;
+  transition: 0.5s
+}
+
+header nav a.call_link {
+  width: 40px;
+  height: 40px;
+  border: 1px solid var(--azul-claro);
+  border: 1px solid #e1edff;
+  border-radius: 21px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s
+}
+
+
+header nav a.call_link:hover {
+
+  background: var(--azul-claro);
+}
+
+header nav a.user_link {
+  width: 32px;
+  height: 32px;
+  /* UI Properties */
+  background: var(---ff991f) 0% 0% no-repeat padding-box;
+  background: #FF991F 0% 0% no-repeat padding-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+
+
+header nav a.restaurant_link:hover {
+  background: var(--azul-claro);
+}
+
+
+/* 
+  Aside Styles
+*/
+
+main .asidebar {
+  height: 100%;
+  width: 64px;
+  background: var(--blanco) 0% 0% no-repeat padding-box;
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  box-shadow: 0px 1px 2px #00000029;
+}
+
+main .asidebar nav {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
+}
+
+main .asidebar nav a {
+  margin: 10px 0;
+  padding: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  transition: .5s;
+  position: relative;
+}
+
+
+main .asidebar nav a .notification {
+  position: absolute;
+  font-size: 12px;
+  background: #ff4633;
+  height: 17px;
+  color: #FFFFFF;
+  width: 17px;
+  text-align: center;
+  border-radius: 50%;
+  top: 0;
+  right: 0;
+}
+
+main .asidebar nav a:hover {
+  background: #FFE9CE;
+}
+
+main .asidebar nav a.active {
+  background: #FFE9CE;
+  color: #FF991F;
+}
+
+
+/* Cupones  */
+
+main .cupones {
+  width: 345px;
+  box-shadow: 1px 0px 2px #00000029;
+}
+
+main .cupones .header {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  box-shadow: 0px 1px .5px #00000029;
+  margin-top: 20px;
+}
+
+main .cupones .header h3 {
+  font-size: 16px;
+  color: var(--gris);
+  font-weight: 500;
+}
+
+main .cupones .header span {
+  font-size: 12px;
+  color: #97A0B0;
+  font-weight: 300;
+  letter-spacing: .4px;
+}
+
+main .cupones .header .go_back_btn {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+  margin-top: 2px;
+  transition: .5s;
+}
+
+main .cupones .header .go_back_btn:hover {
+  background: var(--azul-claro);
+}
+
+main .cupones .header .title {
+  margin-right: 50px;
+  display: flex;
+  margin-bottom: 10px;
+}
+
+main .cupones .header .add {
+  width: 30px;
+  height: 30px;
+  border-radius: 21px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+  margin-bottom: 10px;
+}
+
+
+main .cupones .header .add:hover {
+  background: var(--azul-claro);
+}
+
+main .search {
+  text-align: center;
+
+}
+
+main .search input {
+  color: #97A0B0;
+  border-radius: 5px;
+  border: 1px solid #DEE1E4;
+  background: #FAFBFC;
+  font-size: 14px;
+  margin-top: 15px;
+  outline: none;
+  transition: .5s;
+  padding: 7px 7px;
+  height: 36px;
+  width: 80%;
+}
+
+
+main .search input:focus {
+
+  border: 1px solid #ffb91d;
+
+}
+
+/* Cupones Item */
+
+
+main .cupones_items {
+  width: 100%;
+  padding: 0;
+  margin-top: 20px;
+}
+
+main .cupones_items .item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  box-shadow: 0px 0px 2px #00000029;
+  cursor: pointer;
+  transition: .5s;
+
+}
+
+main .cupones_items .item:hover {
+  background: #F6F9FB 0% 0% no-repeat padding-box;
+}
+
+main .cupones_items .item p {
+  font-size: 12px;
+  margin-left: 10px;
+
+
+}
+
+main .cupones_items .item .values_item {
+  display: flex;
+  align-items: center;
+}
+
+main .cupones_items .item .values_item span {
+  font-size: 12px;
+  color: var(--gris);
+  font-weight: 500;
+  margin-right: 2px;
+}
